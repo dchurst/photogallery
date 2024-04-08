@@ -69,7 +69,7 @@ body {
 
 /* HEADER */
 
-header h1 {
+h1 {
     background-color: var(--white);
     color: var(--aqua);
     font-size: 3em;
@@ -105,18 +105,19 @@ nav a:hover {
 }
 
 [href="#top"] {
-    background-color: var(--aqua);
-    border-radius: 10px 0 0 10px;
+    background-color: var(--black);
+    border: 5px var(--white) solid;
     color: var(--white);
-    padding: 20px;
+    padding: 10px 20px;
     position:fixed;
     bottom:0px;
     right:0px;
+    z-index: 1;
   }
 
   [href="#top"]:hover {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--aqua);
+    color: var(--white);
   }  
 
 /***** MAIN CONTENT *****/
@@ -132,6 +133,7 @@ h2 {
 }
 
 main p {
+    font-size: 1.25em;
     margin: 15px 10px 10px;
 }
 
@@ -253,7 +255,6 @@ button:hover {
 footer {
     background-color: var(--black);
     color: var(--white);
-    font-size: 1em;
     padding: 50px 0 30px 0;
     text-align: center;
     text-transform: uppercase;
@@ -279,7 +280,6 @@ small {
         flex-flow: row wrap;
         justify-content: center;
     }
-
 
     figure {
         margin: 9px;
@@ -310,6 +310,6 @@ small {
     }
 
     figure {
-        margin: 5px 6px 20px;
+        margin: 5px;
     }
 }
